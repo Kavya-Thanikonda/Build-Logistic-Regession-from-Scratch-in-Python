@@ -1,0 +1,6 @@
+# Compute Hypothesis
+# h(x) = g(theta' * X)
+def hypothesisFunc(X, theta):
+  z = np.matmul(X, theta)
+  hypothesis = sigmoidFunc(z)
+  return hypothesis
